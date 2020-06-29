@@ -69,11 +69,6 @@ def login():
     return render_template('login.html')
 
 
-@app.route('/forgot_login')
-def login():
-    return render_template('forgot.html')
-
-
 @app.route('/form_login', methods=['POST', 'GET'])
 def form_login():
     name = request.form['username']

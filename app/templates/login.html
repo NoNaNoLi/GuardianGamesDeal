@@ -41,7 +41,7 @@ button:hover {
 }
 
 img.avatar {
-  width: 40%;
+  width: 10%;
   border-radius: 50%;
 }
 
@@ -72,9 +72,9 @@ span.psw {
 
 <form action="/form_login" method="post">
   <div class="imgcontainer">
-    <img src="https://th.bing.com/th/id/OIP.2SSzTHiJEoI4o4f4nQUY1wHaHU?pid=Api&rs=1" alt="Avatar" class="avatar">
+    <img src="https://th.bing.com/th/id/OIP.HOCVmLu4PQudD3fnRRzE4wAAAA?pid=Api&rs=1" alt="Avatar" class="avatar">
   </div>
-
+  <h1 >{{info}}</h1>
   <div class="container">
     <label for="username"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="username" required>
@@ -89,9 +89,10 @@ span.psw {
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-      <h1 >{{info}}</h1>
-    <span class="psw">Forgot <a href="/forgot_login">password?</a></span>
+
+      <a href='/'>
+        <button type="button" class="cancelbtn">Cancel</button>
+
   </div>
 </form>
 
