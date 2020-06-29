@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
 
@@ -64,36 +64,37 @@ span.psw {
      width: 100%;
   }
 }
-</style>
+
+    </style>
 </head>
 <body>
 
 <h2>Login Form</h2>
 
 <form action="/form_login" method="post">
-  <div class="imgcontainer">
-    <img src="https://th.bing.com/th/id/OIP.HOCVmLu4PQudD3fnRRzE4wAAAA?pid=Api&rs=1" alt="Avatar" class="avatar">
-  </div>
-  <h1 >{{info}}</h1>
-  <div class="container">
-    <label for="username"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required>
+    <div class="imgcontainer">
+        <img alt="Avatar" class="avatar" src="https://th.bing.com/th/id/OIP.HOCVmLu4PQudD3fnRRzE4wAAAA?pid=Api&rs=1">
+    </div>
+    <h1>{{info}}</h1>
+    <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input name="username" placeholder="Enter Username" required type="text">
 
-    <label for="password"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="password" required>
+        <label for="password"><b>Password</b></label>
+        <input name="password" placeholder="Enter Password" required type="password">
 
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+        <button type="submit">Login</button>
+        <label>
+            <input checked="checked" name="remember" type="checkbox"> Remember me
+        </label>
+    </div>
 
-  <div class="container" style="background-color:#f1f1f1">
+    <div class="container" style="background-color:#f1f1f1">
 
-      <a href='/'>
-        <button type="button" class="cancelbtn">Cancel</button>
+        <a href='/'>
+            <button class="cancelbtn" type="button">Cancel</button>
 
-  </div>
+    </div>
 </form>
 
 </body>

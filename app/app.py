@@ -1,7 +1,7 @@
-from flask import Flask, request, render_template
-import requests
-from pyquery import PyQuery as pq
 import pymysql
+import requests
+from flask import Flask, request, render_template
+from pyquery import PyQuery as pq
 
 app = Flask(__name__)
 
