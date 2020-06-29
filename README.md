@@ -42,5 +42,5 @@ Developed with Flask / Jinja2 / Bootstrap / MySQL
 
 ### Demo
 
-[GuardianGames.pythonanywhere.com]()
+[GuardianGames.pythonanywhere.com]() (Unavailable)
 
