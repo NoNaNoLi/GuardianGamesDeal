@@ -42,5 +42,7 @@ Developed with Flask / Jinja2 / Bootstrap / MySQL
 
 ### Demo
 
+https://github.com/NoNaNoLi/GuardianGamesDeal/master/demo/Main_screenshot.png
+
 [GuardianGames.pythonanywhere.com]() (Unavailable)
 
