@@ -42,3 +42,4 @@ $ pip3 install -r requirements.txt
 
 ### Demo
 
+![Main_screenshot](/Users/yuhufeng/OneDrive/Study/BUAA/Spring 2020/Python/GuardianGamesDeal/demo/Main_screenshot.png)
