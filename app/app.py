@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, request, render_template
 import requests
 from pyquery import PyQuery as pq
 import pymysql
@@ -16,6 +16,7 @@ gName = {}
 gDiscount = {}
 gdate = {}
 gprice = {}
+
 
 def create():
     db = pymysql.connect(host=dbHost,
@@ -46,7 +47,7 @@ def insert(data):
         sql = "INSERT INTO STEAM_DISCOUNT(NAME,DISCOUNT,PUBLISH_DATE,ORIGINAL_PRICE) values(%s,%s,%s,%s)"
         cursor.execute(sql, game)  # 执行sql语句，movie即是指要插入数据库的数据
         db.commit()  # 插入完成后，不要忘记提交操作
-        #print("success")
+        # print("success")
     cursor.close()
     db.close()
 
@@ -62,9 +63,24 @@ def show():
     cursor.close()
     db.close()
 
+
 @app.route('/login')
 def login():
     return render_template('login.html')
+
+
+@app.route('/form_login', methods=['POST', 'GET'])
+def form_login():
+    name = request.form['username']
+    pwd = request.form['password']
+    if name != 'root':
+        return render_template('login.html', info='Invalid User')
+    else:
+        if pwd != 'Guardian123':
+            return render_template('login.html', info='Invalid Password')
+        else:
+            return render_template('home.html', name='root')
+
 
 @app.route("/")
 def hello():
@@ -76,35 +92,35 @@ def hello():
         gdate1=gdate[1],
         gprice1=gprice[1],
         gStore1="steam",
-    
+
         # game 2 information
         gName2=gName[2],
         gDiscount2=gDiscount[2],
         gdate2=gdate[2],
         gprice2=gprice[2],
         gStore2="steam",
-    
+
         # game 3 information
         gName3=gName[3],
         gDiscount3=gDiscount[3],
         gdate3=gdate[3],
         gprice3=gprice[3],
         gStore3="steam",
-    
+
         # game 4 information
         gName4=gName[4],
         gDiscount4=gDiscount[4],
         gdate4=gdate[4],
         gprice4=gprice[4],
         gStore4="steam",
-    
+
         # game 5 information
         gName5=gName[5],
         gDiscount5=gDiscount[5],
         gdate5=gdate[5],
         gprice5=gprice[5],
         gStore5="steam",
-    
+
         # game 6 information
         gName6=gName[6],
         gDiscount6=gDiscount[6],
