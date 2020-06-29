@@ -8,7 +8,7 @@ app = Flask(__name__)
 # database initialisation
 dbHost = "localhost"
 dbUser = "root"
-dbPass = "233233"
+dbPass = "Guardian123"
 dbase = "test"
 dbCharset = 'utf8'
 
