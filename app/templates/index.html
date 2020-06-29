@@ -5,122 +5,304 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 <div class="w3-panel w3-animate-opacity">
-<div class="w3-tag w3-jumbo">G</div>
-<div class="w3-tag w3-jumbo">U</div>
-<div class="w3-tag w3-jumbo">A</div>
-<div class="w3-tag w3-jumbo">R</div>
-<div class="w3-tag w3-jumbo">D</div>
-<div class="w3-tag w3-jumbo">I</div>
-<div class="w3-tag w3-jumbo">A</div>
-<div class="w3-tag w3-jumbo">N</div>
-<div class="w3-tag w3-jumbo">G</div>
-<div class="w3-tag w3-jumbo">A</div>
-<div class="w3-tag w3-jumbo">M</div>
-<div class="w3-tag w3-jumbo">E</div>
-<a href='/login'>
-  <button>Login</button>
-</a>
+    <div class="w3-tag w3-jumbo">G</div>
+    <div class="w3-tag w3-jumbo">U</div>
+    <div class="w3-tag w3-jumbo">A</div>
+    <div class="w3-tag w3-jumbo">R</div>
+    <div class="w3-tag w3-jumbo">D</div>
+    <div class="w3-tag w3-jumbo">I</div>
+    <div class="w3-tag w3-jumbo">A</div>
+    <div class="w3-tag w3-jumbo">N</div>
+    <div class="w3-tag w3-jumbo">G</div>
+    <div class="w3-tag w3-jumbo">A</div>
+    <div class="w3-tag w3-jumbo">M</div>
+    <div class="w3-tag w3-jumbo">E</div>
+    <a href='/login'>
+        <button>Login</button>
+    </a>
 </div>
 
 <div class="w3-row-padding">
+    <div class="w3-third">
+        <div class="w3-card">
+            <div class="w3-container w3-dark-grey">
+                <h1><p>{{gName1}}</p></h1>
+            </div>
+            <div class="w3-container w3-xlarge">
+                <p>{{gDiscount1}}<br>
+                    <i>
+                <p><b>Release: </b>{{gdate1}}</p></i><br>
+                <span class="w3-xxlarge w3-text-red"><b>Store: </b>{{gStore1}}</span></p>
+                <p>Now only {{gprice1}} !!!</p>
+            </div>
+            <div class="w3-container w3-red">
+                <p class="w3-opacity">Free: {{gFree1}}</p>
+            </div>
+            <br>
+            <div class="w3-card">
+                <div class="w3-container">
+                    <h1><b>{{gName2}}</b></h1>
+                </div>
+                <div class="w3-container w3-xlarge w3-dark-grey">
+                    <p>{{gDiscount2}}<br>
+                        <i>
+                    <p><b>Release: </b>{{gdate2}}</p></i><br>
+                    <span class="w3-xxlarge"><b>Store: </b>{{gStore2}}</span></p>
+                    <p>Now only ${{gprice2}} !!!</p>
+                </div>
+                <div class="w3-container">
+                    <p class="w3-opacity">Free: {{gFree2}}</p>
+                </div>
+            </div>
 
-<div class="w3-third">
-  <div class="w3-card">
-  <div class="w3-container w3-red">
-    <h1><p>{{gName1}}</p></h1>
-  </div>
-  <div class="w3-container w3-xlarge">
-    <p>{{gDiscount1}}<br>
-    <i><p><b>Release: </b>{{gdate1}}</p></i><br>
-    <span class="w3-xxlarge w3-text-red"><b>Store: </b>{{gStore1}}</span></p>
-    <p>Now only {{gprice1}} !!!</p>
-  </div>
-  <div class="w3-container w3-red">
-    <p class="w3-opacity">Free: {{gFree1}}</p>
-  </div>
+            <br>
+            <div class="w3-card">
+                <div class="w3-container">
+                    <h1><b>{{gName3}}</b></h1>
+                </div>
+                <div class="w3-container w3-xlarge w3-dark-grey">
+                    <p>{{gDiscount3}}<br>
+                        <i>
+                    <p><b>Release: </b>{{gdate3}}</p></i><br>
+                    <span class="w3-xxlarge"><b>Store: </b>{{gStore3}}</span></p>
+                    <p>Now only ${{gprice3}} !!!</p>
+                </div>
+                <div class="w3-container">
+                    <p class="w3-opacity">Free: {{gFree3}}</p>
+                </div>
+            </div>
 
-  </div>
-  <br>
-  <div class="w3-card">
-  <div class="w3-container w3-green">
-    <h1><p>{{gName2}}</p></h1>
-  </div>
-  <div class="w3-container w3-xlarge">
-    <p>{{gDiscount2}}<br>
-      <i><p><b>Release: </b>{{gdate2}}</p></i><br>
-      <span class="w3-xxlarge w3-text-red"><b>Store: </b>{{gStore2}}</span></p>
-    <p>Now only {{gprice2}} !!!</p>
-  </div>
-  <div class="w3-container w3-green">
-    <p class="w3-opacity">Free: {{gFree2}}</p>
-  </div>
-  </div>
-</div>
+            <br>
+            <div class="w3-card">
+                <div class="w3-container">
+                    <h1><b>{{gName4}}</b></h1>
+                </div>
+                <div class="w3-container w3-xlarge w3-dark-grey">
+                    <p>{{gDiscount4}}<br>
+                        <i>
+                    <p><b>Release: </b>{{gdate4}}</p></i><br>
+                    <span class="w3-xxlarge"><b>Store: </b>{{gStore4}}</span></p>
+                    <p>Now only ${{gprice4}} !!!</p>
+                </div>
+                <div class="w3-container">
+                    <p class="w3-opacity">Free: {{gFree4}}</p>
+                </div>
+            </div>
 
-<div class="w3-third">
-  <div class="w3-card w3-animate-fading">
-  <div class="w3-container w3-blue">
-    <h1><p>{{gName3}}</p></h1>
-  </div>
-  <div class="w3-container w3-xlarge">
-    <p>{{gDiscount3}}<br>
-      <i><p><b>Release: </b>{{gdate3}}</p></i><br>
-    <span class="w3-xxlarge w3-text-red"><b>Store: </b>{{gStore3}}</span></p>
-    <p>Now only {{gprice3}} !!!</p>
-  </div>
-  <div class="w3-container w3-blue">
-    <p class="w3-opacity">Free: {{gFree3}}</p>
-  </div>
+        </div>
+        <br>
+        <div class="w3-card">
+            <div class="w3-container w3-dark-grey">
+                <h1><p>{{gName5}}</p></h1>
+            </div>
+            <div class="w3-container w3-xlarge">
+                <p>{{gDiscount5}}<br>
+                    <i>
+                <p><b>Release: </b>{{gdate5}}</p></i><br>
+                <span class="w3-xxlarge w3-text-red"><b>Store: </b>{{gStore5}}</span></p>
+                <p>Now only {{gprice5}} !!!</p>
+            </div>
+            <div class="w3-container w3-green">
+                <p class="w3-opacity">Free: {{gFree5}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-third">
+        <div class="w3-card">
+            <div class="w3-container w3-light-grey">
+                <h1><p>{{gName6}}</p></h1>
+            </div>
+            <div class="w3-container w3-xlarge">
+                <p>{{gDiscount6}}<br>
+                    <i>
+                <p><b>Release: </b>{{gdate6}}</p></i><br>
+                <span class="w3-xxlarge w3-text-red"><b>Store: </b>{{gStore6}}</span></p>
+                <p>Now only {{gprice6}} !!!</p>
+            </div>
+            <div class="w3-container w3-blue">
+                <p class="w3-opacity">Free: {{gFree6}}</p>
+            </div>
+            <br>
+            <div class="w3-card">
+                <div class="w3-container">
+                    <h1><b>{{gName7}}</b></h1>
+                </div>
+                <div class="w3-container w3-xlarge w3-red">
+                    <p>{{gDiscount7}}<br>
+                        <i>
+                    <p><b>Release: </b>{{gdate7}}</p></i><br>
+                    <span class="w3-xxlarge"><b>Store: </b>{{gStore7}}</span></p>
+                    <p>Now only ${{gprice7}} !!!</p>
+                </div>
+                <div class="w3-container">
+                    <p class="w3-opacity">Free: {{gFree7}}</p>
+                </div>
+            </div>
+            <br>
+            <div class="w3-card">
+                <div class="w3-container w3-dark-grey">
+                    <h1><b>{{gName7}}</b></h1>
+                </div>
+                <div class="w3-container w3-xlarge w3-grey">
+                    <p>{{gDiscount7}}<br>
+                        <i>
+                    <p><b>Release: </b>{{gdate7}}</p></i><br>
+                    <span class="w3-xxlarge"><b>Store: </b>{{gStore7}}</span></p>
+                    <p>Now only ${{gprice7}} !!!</p>
+                </div>
+                <div class="w3-container">
+                    <p class="w3-opacity">Free: {{gFree7}}</p>
+                </div>
+            </div>
+            <br>
+            <div class="w3-card">
+                <div class="w3-container w3-yellow">
+                    <h1><b>{{gName8}}</b></h1>
+                </div>
+                <div class="w3-container w3-xlarge w3-red">
+                    <p>{{gDiscount8}}<br>
+                        <i>
+                    <p><b>Release: </b>{{gdate8}}</p></i><br>
+                    <span class="w3-xxlarge"><b>Store: </b>{{gStore8}}</span></p>
+                    <p>Now only ${{gprice8}} !!!</p>
+                </div>
+                <div class="w3-container">
+                    <p class="w3-opacity">Free: {{gFree8}}</p>
+                </div>
+            </div>
+            <br>
+            <div class="w3-card">
+                <div class="w3-container">
+                    <h1><b>{{gName9}}</b></h1>
+                </div>
+                <div class="w3-container w3-xlarge w3-red">
+                    <p>{{gDiscount9}}<br>
+                        <i>
+                    <p><b>Release: </b>{{gdate9}}</p></i><br>
+                    <span class="w3-xxlarge"><b>Store: </b>{{gStore9}}</span></p>
+                    <p>Now only ${{gprice9}} !!!</p>
+                </div>
+                <div class="w3-container">
+                    <p class="w3-opacity">Free: {{gFree9}}</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="w3-card">
+            <div class="w3-container w3-light-grey">
+                <h1><b>{{gName10}}</b></h1>
+            </div>
+            <div class="w3-container w3-xlarge w3-yellow">
+                <p>{{gDiscount10}}<br>
+                    <i>
+                <p><b>Release: </b>{{gdate10}}</p></i><br>
+                <span class="w3-xxlarge w3-text-red"><b>Store: </b>{{gStore10}}</span></p>
+                <p>Now only {{gprice10}} !!!</p>
+            </div>
+            <div class="w3-container w3-yellow">
+                <p class="w3-opacity">Free: {{gFree10}}</p>
+            </div>
+        </div>
+    </div>
 
-  </div>
-  <br>
-  <div class="w3-card w3-animate-zoom">
-  <div class="w3-container w3-yellow">
-    <h1><b>{{gName4}}</b></h1>
-  </div>
-  <div class="w3-container w3-xlarge w3-yellow">
-    <p>{{gDiscount4}}<br>
-    <i><p><b>Release: </b>{{gdate4}}</p></i><br>
-    <span class="w3-xxlarge w3-text-red"><b>Store: </b>{{gStore4}}</span></p>
-    <p>Now only {{gprice4}} !!!</p>
-  </div>
-  <div class="w3-container w3-yellow">
-    <p class="w3-opacity">Free: {{gFree4}}</p>
-  </div>
-  </div>
-</div>
+    <div class="w3-third">
+        <div class="w3-card">
+            <div class="w3-container w3-light-grey">
+                <h1><b>{{gName11}}</b></h1>
+            </div>
+            <div class="w3-container w3-xlarge w3-yellow">
+                <p>{{gDiscount11}}<br>
+                    <i>
+                <p><b>Release: </b>{{gdate11}}</p></i><br>
+                <span class="w3-xxlarge w3-text-red"><b>Store: </b>{{gStore11}}</span></p>
+                <p>Now only {{gprice11}} !!!</p>
+            </div>
+            <div class="w3-container w3-red">
+                <p class="w3-opacity">Free: {{gFree11}}</p>
+            </div>
+        </div>
+        <br>
+        <div class="w3-card">
+            <div class="w3-container w3-light-grey">
+                <h1><b>{{gName12}}</b></h1>
+            </div>
+            <div class="w3-container w3-xlarge w3-white">
+                <p>{{gDiscount12}}<br>
+                    <i>
+                <p><b>Release: </b>{{gdate12}}</p></i><br>
+                <span class="w3-xxlarge"><b>Store: </b>{{gStore12}}</span></p>
+                <p>Now only ${{gprice12}} !!!</p>
+            </div>
+            <div class="w3-container">
+                <p class="w3-opacity">Free: {{gFree12}}</p>
+            </div>
+        </div>
 
-<div class="w3-third">
-  <div class="w3-card">
-  <div class="w3-container w3-red">
-    <h1><b>{{gName5}}</b></h1>
-  </div>
-  <div class="w3-container w3-xlarge w3-yellow">
-    <p>{{gDiscount5}}<br>
-      <i><p><b>Release: </b>{{gdate5}}</p></i><br>
-    <span class="w3-xxlarge w3-text-red"><b>Store: </b>{{gStore5}}</span></p>
-    <p>Now only {{gprice5}} !!!</p>
-  </div>
-  <div class="w3-container w3-red">
-    <p class="w3-opacity">Free: {{gFree5}}</p>
-  </div>
-  </div>
-  <br>
-  <div class="w3-card">
-  <div class="w3-container">
-    <h1><b>{{gName6}}</b></h1>
-  </div>
-  <div class="w3-container w3-xlarge w3-red">
-    <p>{{gDiscount6}}<br>
-      <i><p><b>Release: </b>{{gdate5}}</p></i><br>
-    <span class="w3-xxlarge"><b>Store: </b>{{gStore5}}</span></p>
-    <p>Now only ${{gprice6}} !!!</p>
-  </div>
-  <div class="w3-container">
-    <p class="w3-opacity">Free: {{gFree6}}</p>
-  </div>
-  </div>
-</div>
+        <br>
+        <div class="w3-card">
+            <div class="w3-container w3-light-grey">
+                <h1><b>{{gName13}}</b></h1>
+            </div>
+            <div class="w3-container w3-xlarge w3-blue">
+                <p>{{gDiscount13}}<br>
+                    <i>
+                <p><b>Release: </b>{{gdate13}}</p></i><br>
+                <span class="w3-xxlarge"><b>Store: </b>{{gStore13}}</span></p>
+                <p>Now only ${{gprice13}} !!!</p>
+            </div>
+            <div class="w3-container">
+                <p class="w3-opacity">Free: {{gFree13}}</p>
+            </div>
+        </div>
+        <br>
+        <div class="w3-card">
+            <div class="w3-container">
+                <h1><b>{{gName14}}</b></h1>
+            </div>
+            <div class="w3-container w3-xlarge w3-red">
+                <p>{{gDiscount14}}<br>
+                    <i>
+                <p><b>Release: </b>{{gdate14}}</p></i><br>
+                <span class="w3-xxlarge"><b>Store: </b>{{gStore14}}</span></p>
+                <p>Now only ${{gprice14}} !!!</p>
+            </div>
+            <div class="w3-container">
+                <p class="w3-opacity">Free: {{gFree14}}</p>
+            </div>
+        </div>
+        <br>
+        <div class="w3-card">
+            <div class="w3-container">
+                <h1><b>{{gName15}}</b></h1>
+            </div>
+            <div class="w3-container w3-xlarge w3-red">
+                <p>{{gDiscount15}}<br>
+                    <i>
+                <p><b>Release: </b>{{gdate15}}</p></i><br>
+                <span class="w3-xxlarge"><b>Store: </b>{{gStore15}}</span></p>
+                <p>Now only ${{gprice15}} !!!</p>
+            </div>
+            <div class="w3-container">
+                <p class="w3-opacity">Free: {{gFree5}}</p>
+            </div>
+        </div>
+        <br>
+        <div class="w3-card">
+            <div class="w3-container">
+                <h1><b>{{gName16}}</b></h1>
+            </div>
+            <div class="w3-container w3-xlarge w3-white">
+                <p>{{gDiscount16}}<br>
+                    <i>
+                <p><b>Release: </b>{{gdate16}}</p></i><br>
+                <span class="w3-xxlarge"><b>Store: </b>{{gStore16}}</span></p>
+                <p>Now only ${{gprice16}} !!!</p>
+            </div>
+            <div class="w3-container">
+                <p class="w3-opacity">Free: {{gFree16}}</p>
+            </div>
+        </div>
+    </div>
 
 
 </div>
