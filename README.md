@@ -22,7 +22,7 @@ Developed with Flask / Jinja2 / Bootstrap / MySQL
 
 ​		Note: The scraper function (@Qicheng Wang) requires an open 443 port. Certain hosts (e.g. Pythonanywhere Free Account) cannot support its deployment.
 
-2. Build database
+2. Build database & Adjust db user settings accordingly
 
 `create database test character set utf8mb4`
 
