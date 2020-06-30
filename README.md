@@ -16,15 +16,13 @@ Developed with Flask / Jinja2 / Bootstrap / MySQL
 
 `$ pip3 install -r requirements.txt`
 
-2. Edit Config file
-
-
-
-​		Note: The scraper function (@Qicheng Wang) requires an open 443 port. Certain hosts (e.g. Pythonanywhere Free Account) cannot support its deployment.
-
-2. Build database & Adjust db user settings accordingly
+2. Build database & Adjust db user settings accordingly 
 
 `create database test character set utf8mb4`
+
+Adjust db settings in app.py
+
+3. run app.py
 
 ### Achieved Function
 
